@@ -66,7 +66,6 @@ export default function Confirmation() {
   let restaurantName = localStorage.getItem('restaurantName')
   let delivery = localStorage.getItem('deliveryLocation')
   let order = localStorage.getItem('order')
-  console.log(restaurantName)
 
   //getting data from local storage that was inputted in customOrderInput
   let address = localStorage.getItem('address')
@@ -91,7 +90,6 @@ export default function Confirmation() {
       restaurant: restaurantName,
     }
 
-    console.log(orderData)
 
     //Send the data to the backend
     const response = await submitOrder(orderData)

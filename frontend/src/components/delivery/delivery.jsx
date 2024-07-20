@@ -56,7 +56,6 @@ export default function Delivery() {
         async function getDeliveryList() {
             await getAllAvailableOrders().then((response) => {
                 if (response === undefined) {
-                    console.log("No Data");
                 } else {
                     setDeliveryList(response);
                 }
@@ -73,7 +72,6 @@ export default function Delivery() {
             orderId: deliveryObj.docId,
         }
         const status = await orderAccepted(body).then((res) => {
-            console.log(res)
             if (res.status == 200) {
                 return true
             } else {

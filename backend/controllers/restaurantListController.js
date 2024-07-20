@@ -23,7 +23,6 @@ async function restaurantList(req, res) {
             // Helper function to check if the restaurant is open
             function isOpen(operatingHoursData, currentDateTime) {
                 if (operatingHoursData.openTime === "closed") {
-                    console.error("Error: Restaurant is closed for the day:", doc.id);
                     return false;
                 }
 
@@ -31,7 +30,6 @@ async function restaurantList(req, res) {
                 let closeTime = operatingHoursData.closeTime;
 
                 if (!openTime || !closeTime) {
-                    console.error("Error: Missing operating hours data for restaurant:", doc.id);
                     return false;
                 }
 
@@ -49,13 +47,11 @@ async function restaurantList(req, res) {
                 if (closeMinutes < openMinutes) {
                     // If current time is after midnight but before opening time, it's closed
                     if (currentMinutes < openMinutes && currentMinutes > closeMinutes) {
-                        console.error("Error: Restaurant is closed for the day:", doc.id);
                         return false;
                     }
                 } else {
                     // Standard case: open and close on the same day
                     if (currentMinutes < openMinutes || currentMinutes > closeMinutes) {
-                        console.error("Error: Restaurant is closed for the day:", doc.id);
                         return false;
                     }
                 }

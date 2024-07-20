@@ -10,7 +10,6 @@ async function createChat(req, res) {
         const existingChatRoom = await ChatRoom.findOne({ _id: roomId });
 
         if (existingChatRoom) {
-            console.log("ROOM CREATED!");
             return res.status(409).json({
                 message: "Chat room already exists!",
             });

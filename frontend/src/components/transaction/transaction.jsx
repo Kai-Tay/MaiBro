@@ -26,7 +26,6 @@ export function Transaction() {
       await historyList(body).then((response) => {
         // if there is no data return nothing
         if(response === undefined){
-          console.log("No Data");
           return false
         }else{
           setData(response);

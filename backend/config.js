@@ -65,7 +65,6 @@ function initSocket(server) {
 
     // Add event listeners to the socket.io
     io.on("connection", socket => {
-        console.log(`User ${socket.id} connected!`);
     
         // Listen for the join room event
         socket.on('join room', (roomId) => {

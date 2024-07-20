@@ -17,7 +17,6 @@ export default function Restaurant(detail) {
         async function getRestaurantList() {
             await getAllRestaurant().then((response) => {  
                 if (response === undefined) {
-                    console.log("No Data");
                     return false
                 } else {
                     localStorage.setItem('restaurantData', JSON.stringify(response));
@@ -33,15 +32,12 @@ export default function Restaurant(detail) {
         const restaurantData = localStorage.getItem('restaurantData') || false;
         const restaurantObj = JSON.parse(restaurantData);
         if (restaurantData == false) {
-            console.log("No Data in local cache")
             getRestaurantList();
             
             //Save lastUpdate time to local cache
             localStorage.setItem('lastRestaurantUpdate', currentHour);}
         else {
-            console.log("Data in local cache... Checking time now")
             if (localStorage.getItem('lastRestaurantUpdate') != currentHour) {
-                console.log("Data in local cache is outdated. Updating now")
                 getRestaurantList()
 
                 //Save lastUpdate time to local cache

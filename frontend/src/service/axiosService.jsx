@@ -10,7 +10,6 @@ async function submitSignup(body) {
       data: body,
     });
   } catch (error) {
-    console.log(error)
     return false
   }
 

@@ -62,8 +62,7 @@ export default function SignUp() {
             
         }).catch((error) => {
             // An error occurred
-            console.log(error)
-            console.log("An error occurred while updating name");
+            console.log("An error occurred while updating name", error);
         });
     };
 
