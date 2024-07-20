@@ -49,7 +49,7 @@ let io;
 function initSocket(server) {
     io = new Server(server, {
         cors: {
-            origin: ["https://localhost:5173"],
+            origin: ["http://localhost:5173"],
         },
     });
 
