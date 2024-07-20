@@ -49,7 +49,7 @@ let io;
 function initSocket(server) {
     io = new Server(server, {
         cors: {
-            origin: ["http://localhost:5173"],
+            origin: ["http://localhost"],
         },
     });
 
@@ -69,7 +69,6 @@ function initSocket(server) {
         // Listen for the join room event
         socket.on('join room', (roomId) => {
             socket.join(roomId);
-            console.log(`User ${socket.id} joined room: ${roomId}`);
         });
     
         // Listen for 'chat message' event and broadcast to the room
@@ -95,7 +94,6 @@ function initSocket(server) {
 
             // Broadcast the message to the room
             io.to(roomId).emit('chat message', {message, sender});
-            console.log(`Message sent to room ${roomId}: ${message} by user ${socket.id}`);
         });
 
         socket.on('disconnect', () => {

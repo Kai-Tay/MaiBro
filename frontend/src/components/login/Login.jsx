@@ -5,7 +5,7 @@ import { RecaptchaVerifier, signInWithPhoneNumber, setPersistence, browserSessio
 import {firebaseAuth} from "../../service/firebaseConfig";
 import { useNavigate } from 'react-router-dom';
 import { submitLogin } from '../../service/axiosService';
-import Logo from '/public/assets/icon.png';
+import Logo from '/src/assets/icon.png';
 
 async function checkToken(userId, token) {
   const body = {

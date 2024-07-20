@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './topTab.css';
 import { Button } from '@mui/material';
-import BackArrow from "/public/assets/back.png";
-import ProfilePic from "/public/assets/profile_pic.png";
+import BackArrow from "/src/assets/back.png";
+import ProfilePic from "/src/assets/profile_pic.png";
 
 const BackButton = () => {
     // const location = useLocation();
