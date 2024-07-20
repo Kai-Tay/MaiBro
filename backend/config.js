@@ -9,7 +9,8 @@ const mongoose = require("mongoose");
 const { chatRoomModel, Message } = require("./models/chatRoom");
 
 const serviceAccountKeyPath = process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PATH;
-const serviceAccount = JSON.parse(fs.readFileSync(path.resolve(serviceAccountKeyPath), "utf8")); // Read the service account key file
+const serviceAccount = require("./serviceAccountKey.json"); // Read the service account key file
+
 // Initialise app with admin privileges
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),

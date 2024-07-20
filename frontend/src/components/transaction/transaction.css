@@ -3,6 +3,9 @@
     display: flex;
     justify-content:space-between;
     margin-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-wrap: wrap;
 }
 
 .restName{

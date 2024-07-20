@@ -5,6 +5,7 @@ import { RecaptchaVerifier, signInWithPhoneNumber, setPersistence, browserSessio
 import {firebaseAuth} from "../../service/firebaseConfig";
 import { useNavigate } from 'react-router-dom';
 import { submitLogin } from '../../service/axiosService';
+import Logo from '/public/assets/icon.png';
 
 async function checkToken(userId, token) {
   const body = {
@@ -123,7 +124,7 @@ function Login() {
   return (
     <> 
         <div className='logo'>
-        <img src='src/assets/icon.png' className='logoImg'/>
+        <img src={Logo} className='logoImg'/>
         </div>
         <div className='loginArea'>
             <div className='loginHeader'>

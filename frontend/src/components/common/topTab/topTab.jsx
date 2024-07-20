@@ -2,7 +2,8 @@ import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './topTab.css';
 import { Button } from '@mui/material';
-import {firebaseAuth} from "/src/service/firebaseConfig";
+import BackArrow from "/public/assets/back.png";
+import ProfilePic from "/public/assets/profile_pic.png";
 
 const BackButton = () => {
     // const location = useLocation();
@@ -22,7 +23,7 @@ const BackButton = () => {
     }
     return (
         <div className='backDiv'>
-            <img onClick={handleBackPress} style={{height:"1.5em"}} src='/src/assets/back.png'></img>
+            <img onClick={handleBackPress} style={{height:"1.5em"}} src={BackArrow}></img>
         </div>
     )
     
@@ -62,7 +63,7 @@ export function ProfileTopBar() {
             <>
             <div className='profileTopBar'>
                 <BackButton />
-                <img style={{height:"3em",width:"3em"}}src='/src/assets/profile_pic.png' className='profilePicImg'/>
+                <img style={{height:"3em",width:"3em"}} src={ProfilePic} className='profilePicImg'/>
             </div>
             
             </>
@@ -77,7 +78,7 @@ export function OrderTopBar() {
             <>
             <div className='profileTopBar'>
                 <div style={{fontWeight:"650", fontSize:"1em"}}>Welcome to MaiBro, {userName}!</div>
-                <img style={{height:"3em",width:"3em"}}src='src/assets/profile_pic.png' className='profilePicImg'/>
+                <img style={{height:"3em",width:"3em"}} src={ProfilePic} className='profilePicImg'/>
             </div>
             
             </>
