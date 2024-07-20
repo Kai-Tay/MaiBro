@@ -55,11 +55,11 @@ function initSocket(server) {
 
     // Check the socket connection
     io.on("connection", socket => {
-        console.log(`User ${socket.id} connected!`);
+ 
 
         // Handle disconnection
         socket.on("disconnect", () => {
-            console.log(`User ${socket.id} disconnected!`);
+
         })
     });
 
@@ -97,7 +97,7 @@ function initSocket(server) {
         });
 
         socket.on('disconnect', () => {
-            console.log(`User ${socket.id} disconnected`);
+
         });
     });
 
