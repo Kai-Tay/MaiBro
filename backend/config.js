@@ -49,7 +49,7 @@ let io;
 function initSocket(server) {
     io = new Server(server, {
         cors: {
-            origin: ["http://localhost"],
+            origin: ["https://maibro.onrender.com"],
         },
     });
 
