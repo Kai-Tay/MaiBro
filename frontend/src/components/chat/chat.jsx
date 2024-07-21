@@ -116,7 +116,7 @@ export default function Chat() {
         socket.emit('chat message', {roomId, message, sender});
         // Send Notification to the other user
         messageRef.current.value = ''; // Clear the input field
-        await sendNotification({userName: otherName, msg: message});
+        // await sendNotification({userName: otherName, msg: message});
       };
 
     const handleSend = (event) => {
