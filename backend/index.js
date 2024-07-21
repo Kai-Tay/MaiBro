@@ -11,7 +11,15 @@ app.use(express.json()); // So that express can understand json
 /* We need CORS to enable data from external third party applications.
    It is important when we need to pull data from external APIs and allow authorised servers to access our data.
 */
-app.use(cors()); // Allow cross- origin requests
+const corsOptions = {
+    origin: 'https://maibro.onrender.com', // Your frontend URL
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
+  };
+
+  
+app.use(cors(corsOptions)); // Allow cross- origin requests
 
 // Initialise the socket.io server
 const server = http.createServer(app);

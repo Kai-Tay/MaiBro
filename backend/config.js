@@ -49,8 +49,11 @@ let io;
 function initSocket(server) {
     io = new Server(server, {
         cors: {
-            origin: ["https://maibro.onrender.com"],
-        },
+            origin: 'https://maibro.onrender.com', // Your frontend URL
+            methods: ['GET', 'POST'],
+            allowedHeaders: ['Content-Type', 'Authorization'],
+            credentials: true
+          },
     });
 
     // Check the socket connection
