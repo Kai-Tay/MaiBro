@@ -7,7 +7,7 @@ import axios from "axios";
  */
 
 const axiosInstance = axios.create({
-    baseURL: "http://34.82.77.129:8000",
+    baseURL: "https://maibrobackend.onrender.com:8000",
     headers: { "Content-Type": "application/json" },
     withCredentials: false,
 });
