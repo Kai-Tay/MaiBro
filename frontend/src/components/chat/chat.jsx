@@ -16,7 +16,7 @@ const ChatDisplay = ({roomId}) => {
     //Server Message (Replace useState with current chat history obtained from mongoDB)
     const [messages, setMessages] = useState([]);
     const sender = sessionStorage.getItem("userName");
-    const socket = io('https://maibrobackend.onrender.com:8000');
+    const socket = io('https://maibrobackend.onrender.com');
 
     const messagesEndRef = useRef(null);
 
@@ -101,7 +101,7 @@ export default function Chat() {
     const location = useLocation();
     const deliveryObj = location.state.delivery;
     const sender = sessionStorage.getItem("userName");
-    const socket = io('https://maibrobackend.onrender.com:8000');
+    const socket = io('https://maibrobackend.onrender.com');
     
     //Get the roomId(OrderId) and opposite sender name
     const roomId = deliveryObj.docId;
