@@ -16,7 +16,7 @@ HEAP 2024 is an intensive summer program designed to foster the growth of aspiri
 
 
 ## Week 5 - 7 - Development
-<img width="389" alt="Screenshot 2024-08-23 at 11 13 51 AM" src="https://github.com/user-attachments/assets/6ad87e6e-451a-4812-9173-2a5dcf96da31">
+<img width="388" alt="Screenshot 2024-08-23 at 11 22 52 AM" src="https://github.com/user-attachments/assets/35298d77-a0fe-4189-b3a3-b5b2ba6b44b2">
 <img width="387" alt="Screenshot 2024-08-23 at 11 19 43 AM" src="https://github.com/user-attachments/assets/d1b4a985-ea51-499a-be5d-3849bb0b30e0">
 
 <ul>
@@ -39,7 +39,7 @@ HEAP 2024 is an intensive summer program designed to foster the growth of aspiri
 </ul>
 
 ## Week 10 - Deployment
-View the Deployed Website: [https://maibro.onrender.com/](url) (Backend Server is slow so it will take some time to load)
+View the Deployed Website: [https://maibro.onrender.com/](url) (Backend Server is slow so it will take some time to load as it is a free server :'D )
 Login with +65 12345678 and Password 123456
 
 <ul>
