@@ -14,7 +14,11 @@ HEAP 2024 is an intensive summer program designed to foster the growth of aspiri
   [Figma](https://www.figma.com/design/BoCmY8tX6G4rdmOAPiAeLs/MAIBRO?node-id=0-1&t=AIKo3BwdDjZVeX2Z-1)</li>
 </ul>
 
+
 ## Week 5 - 7 - Development
+<img width="389" alt="Screenshot 2024-08-23 at 11 13 51 AM" src="https://github.com/user-attachments/assets/6ad87e6e-451a-4812-9173-2a5dcf96da31">
+<img width="387" alt="Screenshot 2024-08-23 at 11 19 43 AM" src="https://github.com/user-attachments/assets/d1b4a985-ea51-499a-be5d-3849bb0b30e0">
+
 <ul>
   <li>Split the teams into two groups - One group working on frontend while the other group on backend</li>
   <li>Frontend Team - Completed Login, Home page, Delivery pages</li>
@@ -24,6 +28,9 @@ HEAP 2024 is an intensive summer program designed to foster the growth of aspiri
 </ul>
 
 ## Week 8 - 9 - Development
+<img width="388" alt="Screenshot 2024-08-23 at 11 20 36 AM" src="https://github.com/user-attachments/assets/9c1d903b-c33f-46f5-987b-43f6f040a8cf">
+<img width="388" alt="Screenshot 2024-08-23 at 11 20 43 AM" src="https://github.com/user-attachments/assets/22ac62ad-4f7b-4b81-9a39-399cf30a2da8">
+
 <ul>
   <li>Split the teams into two groups - One group working on frontend while the other group on backend</li>
   <li>Frontend Team - Completed Chat Page and Transaction Pages.</li>
@@ -32,9 +39,14 @@ HEAP 2024 is an intensive summer program designed to foster the growth of aspiri
 </ul>
 
 ## Week 10 - Deployment
+View the Deployed Website: [https://maibro.onrender.com/](url) (Backend Server is slow so it will take some time to load)
+Login with +65 12345678 and Password 123456
+
 <ul>
   <li>Attempted to use Firebase App Hosting -> Did not work/Does not know how it works so we ditched it :/</li>
   <li>Tried out using Docker -> Worked really well and learnt how to use Docker, tried to deploy the docker container on AWS EC2</li>
   <li>Attempted to deploy on AWS EC2 -> Didnt work out that well as we require the site to be HTTPS secured but we did not have a paid IP addres to allow us to do so.</li>
   <li> Resorted to using onRender for deployment -> Quick and simple allowed us to get everything running in minutes with Github and Docker</li>
 </ul>
+
+
