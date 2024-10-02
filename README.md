@@ -68,5 +68,8 @@ Login with +65 12345678 and Password 123456
 </ul>
 
 ## Demo
-[Demo](https://maibro.onrender.com/)
+Visit the demo here: [Demo](https://maibro.onrender.com/)
+Backend will take a while to load due to free tier.
+
+Login Details: Phone - 12345678, OTP - 123456
 
